@@ -46,11 +46,13 @@ public class Point {
 
     public boolean equals(Point otherPoint) {
         // Compare attributes of this point to attributes of otherPoint for equality
-        return false;
+        boolean checkx = Utils.equals(x, otherPoint.x);
+        boolean checky = Utils.equals(y, otherPoint.y);
+        return checkx && checky;
     }
 
     public String toString() {
         // Represent attributes as string
-        return null;
+        return "(" + x + ", " + y + ")";
     }
 }
